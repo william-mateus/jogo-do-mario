@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const clouds = document.querySelector('.clouds');
+const elementoMensagem = document.getElementById("mensagem");
 let score = 0;
 let marioMorreu = false;
 let sonic = false;
@@ -12,7 +13,17 @@ var audioStreetFigther = new Audio('audioStreetFighter.mp3');
 var audioNaruto = new Audio('audioNaruto.mp3');
 var audioMorreu = new Audio('BossTheme.mp3');
 
-
+function mostrarMensagem(mensagem) {
+    elementoMensagem.innerText = mensagem;
+    elementoMensagem.classList.remove("escondido"); 
+        
+    elementoMensagem.classList.add("paraAnimacao");
+        
+    setTimeout(() => {
+        elementoMensagem.classList.remove("paraAnimacao");
+    }
+    , 1000);
+}
 
 function jump() {
     mario.classList.add('jump');
@@ -129,7 +140,7 @@ function pontuacao() {
         audioMorreu.play();
      }
    
-     
+     mostrarMensagem(score);
 
 }
 
