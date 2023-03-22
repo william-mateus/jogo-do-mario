@@ -42,6 +42,10 @@
     animation: jump-animation 500ms ease-out;
 }
 
+.jumpMobile {
+    animation: Mobile-animation 500ms ease-out;
+}
+
 .clouds {
     position: absolute;
     width: 350px;
@@ -93,6 +97,28 @@
     }
 
     60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes Mobile-animation {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    70% {
         bottom: 180px;
     }
 

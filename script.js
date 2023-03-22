@@ -33,6 +33,14 @@ function jump() {
     }, 500);
 }
 
+function jumpMobile() {
+    mario.classList.add('jumpMobile');
+
+    setTimeout(() => {
+        mario.classList.remove('jumpMobile');
+    }, 500);
+}
+
 
 
 function loop() {
