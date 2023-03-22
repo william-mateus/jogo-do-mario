@@ -38,7 +38,7 @@ function jumpMobile() {
 
     setTimeout(() => {
         mario.classList.remove('jumpMobile');
-    }, 1000);
+    }, 500);
 }
 
 

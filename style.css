@@ -43,7 +43,7 @@
 }
 
 .jumpMobile {
-    animation: Mobile-animation 8000ms ease-out;
+    animation: Mobile-animation 1000ms ease-out;
 }
 
 .clouds {
@@ -121,10 +121,10 @@
     70% {
         bottom: 180px;
     }
-    70% {
+    80% {
         bottom: 180px;
     }
-    70% {
+    90% {
         bottom: 180px;
     }
 
