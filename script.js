@@ -148,4 +148,4 @@ function pontuacao() {
 setInterval(loop, 10);
 setInterval(pontuacao, 2000);
 document.addEventListener('keydown', jump);
-onclick.addEventListener(jump);
+document.addEventListener('click',jump);
